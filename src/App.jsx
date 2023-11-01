@@ -106,8 +106,14 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Standard반 배열 API 테스트</h1>
+    <div
+      style={{
+        textAlign: "center",
+        margin: "auto",
+        lineHeight: "2.2rem",
+      }}
+    >
+      <h1 style={{ color: "green" }}>Standard반 배열 API 테스트</h1>
       <input
         value={query}
         onChange={function (e) {
@@ -135,6 +141,9 @@ function App() {
         <h3>원본배열</h3>
         <p>{array.join(", ")}</p>
       </div>
+      <p>
+        <hr></hr>
+      </p>
       <div>
         <h3>결과물</h3>
         <p>{result}</p>
